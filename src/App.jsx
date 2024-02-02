@@ -1,19 +1,25 @@
 import "./App.css";
+import Todo from "./Todo";
 
 function App() {
   return (
     <>
-      <Device name="Laptop" price="50000"></Device>
+      <Todo task="Learn React" isDone={true}></Todo>
+      <Todo task="Explore Concept" isDone={false}></Todo>
+      <Todo task="Try JSX" isDone={true}></Todo>
+      {/* <Device name="Laptop" price="50000"></Device>
       <Device name="Mobile" price="1500"></Device>
-      <Student></Student>
+      <Student></Student> */}
     </>
   );
 }
 
 function Device(props) {
+  const name = props.name;
+  const price = props.price;
   return (
     <h2>
-      This is {props.name}. Price:{props.price}
+      This is {name} Price:{price}
     </h2>
   );
 }
