@@ -1,12 +1,19 @@
 import "./App.css";
 import Todo from "./Todo";
+import Actor from "./Actor";
 
 function App() {
+  const actors = ["Shakib", "Rubel", "Raj"];
+
   return (
     <>
       <Todo task="Learn React" isDone={true}></Todo>
       <Todo task="Explore Concept" isDone={false}></Todo>
       <Todo task="Try JSX" isDone={true}></Todo>
+      <Actor name={"Nayan"}></Actor>
+      {actors.map((actor) => (
+        <Actor name={actor}></Actor>
+      ))}
       {/* <Device name="Laptop" price="50000"></Device>
       <Device name="Mobile" price="1500"></Device>
       <Student></Student> */}

@@ -7,3 +7,28 @@ export default function Todo({ task, isDone }) {
     return <li>Work on: {task}</li>;
   }
 }
+/*tarnary operator*/
+// export default function Todo({ task, isDone }) {
+//   return (
+//     <li>
+//       {isDone ? "Finished" : "Work on"}:{task}
+//     </li>
+//   );
+// }
+
+// export default function Todo({ task, isDone }) {
+//   return (
+//     <li>
+//       {task} {isDone && ":Done"}
+//     </li>
+//   );
+// }
+
+// export default function Todo({ task, isDone }) {
+//   return (
+//       <li>
+//         {task} {isDone || '"Do it'}
+//       </li>
+
+//   );
+// }
